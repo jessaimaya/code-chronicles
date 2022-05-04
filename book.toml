@@ -5,3 +5,6 @@ description =  "My journal abput rust and wasm."
 language = "en"
 multilingual = false
 src = "src"
+
+[output.html]
+site-url = "/rustnal/"
