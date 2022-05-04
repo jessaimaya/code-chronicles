@@ -1,0 +1,7 @@
+[book]
+title = "Rustnal"
+authors = ["jessai"]
+description =  "My journal abput rust and wasm."
+language = "en"
+multilingual = false
+src = "src"
