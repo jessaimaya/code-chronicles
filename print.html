@@ -146,7 +146,7 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="starfield"><a class="header" href="#starfield">Starfield</a></h1>
 <p>Here is the first challenge from this series.
 You can control the speed with your cursor on X axis, just move your cursor inside canvas from left to right.</p>
-<canvas style="margin: 1rem auto;display:block;" id="canvas"  height="600" width="600"/>
+<p><canvas style="margin: 1rem auto;display:block;" id="canvas"  height="600" width="600"></canvas></p>
 <script type="text/javascript">
     const load = async() => {
         let wasm = await import("../wasm/starfield/starfield.js");
@@ -154,6 +154,51 @@ You can control the speed with your cursor on X axis, just move your cursor insi
     };
     load();
 </script> 
+<h2 id="code-highlights"><a class="header" href="#code-highlights">Code highlights</a></h2>
+<p>You can check all the code on this <a href="https://github.com/jessaimaya/rust_wasm">repo</a>.</p>
+<p>But I really enjoy doing this challenge was this extract from the render loop: </p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>    pub fn start(game: impl Sketch + 'static) -&gt; Result&lt;()&gt; {
+    let mut mouse_receiver = mouse()?;
+    let mut game = game.initialize()?;
+    let mut game_loop = RenderLoop {
+        last_frame: now()?,
+        accumulated_delta: 0.0,
+    };
+
+    let renderer = Renderer {
+        context: context()?,
+    };
+
+    let f: SharedLoopClosure = Rc::new(RefCell::new(None));
+    let g = f.clone();
+
+    *g.borrow_mut() = Some(create_raf_closure(move |perf: f64| {
+        let frame_time = perf - game_loop.last_frame;
+        game_loop.accumulated_delta += frame_time as f32;
+        while game_loop.accumulated_delta &gt; FRAME_SIZE {
+            game.update(&amp;mut mouse_receiver);
+            game_loop.accumulated_delta -= FRAME_SIZE;
+        }
+        game_loop.last_frame = perf;
+        game.draw(&amp;renderer);
+
+        request_animation_frame(f.borrow().as_ref().unwrap()).unwrap();
+    }));
+
+    request_animation_frame(
+        g.borrow()
+            .as_ref()
+            .ok_or_else(|| anyhow!(&quot;GameLoop: Loop is None&quot;))?,
+    )?;
+    Ok(())
+}
+<span class="boring">}
+</span></code></pre></pre>
+<p>I consider this part the core of this animated challenge, here is the <code>tick</code> method which renders and updates every entity that implements the <code>Sketch</code> trait.
+It creates a <code>Closure</code> and send it to <code>request_animation_frame</code> in order to get the right timing for each execution.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="doodles"><a class="header" href="#doodles">Doodles</a></h1>
 <p>Some random projects / examples I like to replicate.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="sierpinski-triangle"><a class="header" href="#sierpinski-triangle">Sierpinski Triangle</a></h1>
