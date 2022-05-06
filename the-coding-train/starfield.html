@@ -135,6 +135,16 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="starfield"><a class="header" href="#starfield">Starfield</a></h1>
+<p>Here is the first challenge from this series.
+You can control the speed with your cursor on X axis, just move your cursor inside canvas from left to right.</p>
+<canvas style="margin: 1rem auto;display:block;" id="canvas"  height="600" width="600"/>
+<script type="text/javascript">
+    const load = async() => {
+        let wasm = await import("../wasm/starfield/starfield.js");
+        wasm.default();
+    };
+    load();
+</script> 
 
                     </main>
 
