@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Doodles - Rustnal</title>
+        <title>Menger Sponge - Rustnal</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="My journal abput rust and wasm.">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../welcome.html"><strong aria-hidden="true">1.</strong> Welcome</a></li><li class="chapter-item expanded "><a href="../the-coding-train/index.html"><strong aria-hidden="true">2.</strong> The Coding Train</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../the-coding-train/starfield.html"><strong aria-hidden="true">2.1.</strong> Starfield</a></li><li class="chapter-item expanded "><a href="../the-coding-train/menger_sponge.html"><strong aria-hidden="true">2.2.</strong> Menger Sponge</a></li></ol></li><li class="chapter-item expanded "><a href="../genuary_2022/index.html"><strong aria-hidden="true">3.</strong> Genuary 2022</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../genuary_2022/02_dithering.html"><strong aria-hidden="true">3.1.</strong> 02 Dithering</a></li></ol></li><li class="chapter-item expanded "><a href="../doodles/index.html" class="active"><strong aria-hidden="true">4.</strong> Doodles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../doodles/sierpinski-triangle.html"><strong aria-hidden="true">4.1.</strong> Sierpinski Triangle</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../welcome.html"><strong aria-hidden="true">1.</strong> Welcome</a></li><li class="chapter-item expanded "><a href="../the-coding-train/index.html"><strong aria-hidden="true">2.</strong> The Coding Train</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../the-coding-train/starfield.html"><strong aria-hidden="true">2.1.</strong> Starfield</a></li><li class="chapter-item expanded "><a href="../the-coding-train/menger_sponge.html" class="active"><strong aria-hidden="true">2.2.</strong> Menger Sponge</a></li></ol></li><li class="chapter-item expanded "><a href="../genuary_2022/index.html"><strong aria-hidden="true">3.</strong> Genuary 2022</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../genuary_2022/02_dithering.html"><strong aria-hidden="true">3.1.</strong> 02 Dithering</a></li></ol></li><li class="chapter-item expanded "><a href="../doodles/index.html"><strong aria-hidden="true">4.</strong> Doodles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../doodles/sierpinski-triangle.html"><strong aria-hidden="true">4.1.</strong> Sierpinski Triangle</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,17 +134,19 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="doodles"><a class="header" href="#doodles">Doodles</a></h1>
-<p>Some random projects / examples I like to replicate.</p>
+                        <h2 id="menger-sponge"><a class="header" href="#menger-sponge">Menger Sponge</a></h2>
+<p><canvas id="glcanvas" tabindex='1'></canvas></p>
+<script src="https://not-fl3.github.io/miniquad-samples/mq_js_bundle.js"></script>
+<script>load("../wasm/menger_sponge/macro_wasm.wasm");</script>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../genuary_2022/02_dithering.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../the-coding-train/starfield.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="../doodles/sierpinski-triangle.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../genuary_2022/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -153,10 +155,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../genuary_2022/02_dithering.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../the-coding-train/starfield.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="../doodles/sierpinski-triangle.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../genuary_2022/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
