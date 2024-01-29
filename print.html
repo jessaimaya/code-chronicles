@@ -3,13 +3,13 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Rustnal</title>
+        <title>Code Chronicles</title>
         <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
         
-        <meta name="description" content="My journal abput rust and wasm.">
+        <meta name="description" content="Welcome to Code Chronicles! Here, I document my journey through the world of programming, sharing personal insights, triumphs, and challenges along the way. Dive into my ever-evolving portfolio of full-stack web applications, creative coding experiments, and ongoing learning adventures">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
@@ -30,6 +30,8 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./theme/catppuccin.css">
+        <link rel="stylesheet" href="./theme/catppuccin-admonish.css">
 
     </head>
     <body class="sidebar-visible no-js">
@@ -89,11 +91,9 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome</a></li><li class="chapter-item expanded "><a href="the-coding-train/index.html"><strong aria-hidden="true">2.</strong> The Coding Train</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="the-coding-train/starfield.html"><strong aria-hidden="true">2.1.</strong> Starfield</a></li><li class="chapter-item expanded "><a href="the-coding-train/menger_sponge.html"><strong aria-hidden="true">2.2.</strong> Menger Sponge</a></li></ol></li><li class="chapter-item expanded "><a href="genuary_2022/index.html"><strong aria-hidden="true">3.</strong> Genuary 2022</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="genuary_2022/02_dithering.html"><strong aria-hidden="true">3.1.</strong> 02 Dithering</a></li></ol></li><li class="chapter-item expanded "><a href="doodles/index.html"><strong aria-hidden="true">4.</strong> Doodles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="doodles/sierpinski-triangle.html"><strong aria-hidden="true">4.1.</strong> Sierpinski Triangle</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome</a></li><li class="chapter-item expanded "><a href="the-coding-train/index.html"><strong aria-hidden="true">2.</strong> The Coding Train</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="the-coding-train/starfield.html"><strong aria-hidden="true">2.1.</strong> Starfield</a></li><li class="chapter-item expanded "><a href="the-coding-train/menger_sponge.html"><strong aria-hidden="true">2.2.</strong> Menger Sponge</a></li></ol></li><li class="chapter-item expanded "><a href="genuary/index.html"><strong aria-hidden="true">3.</strong> Genuary</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="genuary/02_dithering.html"><strong aria-hidden="true">3.1.</strong> 02 Dithering</a></li></ol></li><li class="chapter-item expanded "><a href="DSA/index.html"><strong aria-hidden="true">4.</strong> DSA</a></li><li class="chapter-item expanded "><a href="doodles/index.html"><strong aria-hidden="true">5.</strong> Doodles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="doodles/sierpinski-triangle.html"><strong aria-hidden="true">5.1.</strong> Sierpinski Triangle</a></li></ol></li><li class="chapter-item expanded "><a href="Webdev/index.html"><strong aria-hidden="true">6.</strong> Webdev</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
-                <div class="sidebar-resize-indicator"></div>
-            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
         <!-- Track and set sidebar scroll position -->
@@ -136,13 +136,17 @@
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="latte">Latte</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="frappe">Frappé</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="macchiato">Macchiato</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mocha">Mocha</button></li>
                         </ul>
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
 
-                    <h1 class="menu-title">Rustnal</h1>
+                    <h1 class="menu-title">Code Chronicles</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -175,13 +179,14 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="welcome"><a class="header" href="#welcome">Welcome</a></h1>
-<p>Here is my personal journey to practice and learn rust and wasm, two technologies that I like the most.</p>
-<p>On the sidebar you can select categories for different challenges/projects I consider interesting to develop.</p>
-<h2 id="the-coding-train"><a class="header" href="#the-coding-train">The Coding Train</a></h2>
-<p>I'm huge fan of <a href="https://shiffman.net/">Daniel Shiffman</a>, here is a list of challenges I'm gonna try to replicate from the project named The Coding Train.</p>
-<p><a href="https://thecodingtrain.com/CodingChallenges/"><img src="https://thecodingtrain.com/assets/images/standardtv-store.jpg"  alt="The Codgin Train" width="300px" /></a></p>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="the-coding-train-1"><a class="header" href="#the-coding-train-1">The Coding Train</a></h2>
-<p><a href="https://thecodingtrain.com/"><img src="the-coding-train/../images/coding_train.png" alt="The coding Train" /></a></p>
+<p>Hey there! Welcome to my coding journey! This is where I document my ongoing quest to improve my programming skills.</p>
+<p>In this digital space, you'll discover a variety of projects I've been working on using different programming languages and frameworks. It's like my personal laboratory where I experiment and learn through hands-on projects.</p>
+<p>Whether I'm tinkering with web development, diving into creative coding and programming graphics, or exploring new technologies like Rust and Webassembly, you'll find a mix of challenges and triumphs recorded here.</p>
+<p>So, feel free to explore and join me as I navigate this exciting world of coding. Together, let's embrace the adventure of continual learning and growth!</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="the-coding-train"><a class="header" href="#the-coding-train">The Coding Train</a></h2>
+<p>In this special section of my digital playground, we delve into the magical world of creative coding, drawing inspiration from the boundless creativity of <a href="https://en.wikipedia.org/wiki/Daniel_Shiffman">Daniel Shiffman</a>, whom I deeply admire.</p>
+<p>As a big fan of <a href="https://thecodingtrain.com/">The Coding Train</a>, I've set out on a mission to tackle the playful challenges Daniel presents with my own twist. From crafting mesmerizing visual patterns with not only p5.js or Proccessing, but new technologies and graphics engine to building interactive animations, this space is a celebration of experimentation and imagination.</p>
+<p>Here, I'm not just writing code; I'm exploring new horizons, pushing the limits of what's possible, and, most importantly, having a great time along the way!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="starfield"><a class="header" href="#starfield">Starfield</a></h1>
 <p>Here is the first challenge from this series.
 You can control the speed with your cursor on X axis, just move your cursor inside canvas from left to right.</p>
@@ -240,7 +245,9 @@ It creates a <code>Closure</code> and send it to <code>request_animation_frame</
 <p><canvas id="glcanvas" tabindex='1'></canvas></p>
 <script src="https://not-fl3.github.io/miniquad-samples/mq_js_bundle.js"></script>
 <script>load("../wasm/menger_sponge/macro_wasm.wasm");</script>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="genuary-2022"><a class="header" href="#genuary-2022">Genuary 2022</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="genuary"><a class="header" href="#genuary">Genuary</a></h1>
+<p>As the site describe it, <a href="https://genuary.art/">GENUARY</a> is an artificially generated month of time when we build code that makes beautiful things.</p>
+<p>I plan to tackle every prompt from my first year to the present, experimenting with a variety of technologies along the way.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="day-02---dithering"><a class="header" href="#day-02---dithering">Day 02 - Dithering</a></h1>
 <input type="file" id="file" onchange="process()" style="display: block; margin: 1rem auto;"/>
 <label for="number" id="selector" style="display: none;margin-top:1.5rem;">
@@ -383,8 +390,11 @@ Depth:
     };
 
     load();
-</script><div style="break-before: page; page-break-before: always;"></div><h1 id="doodles"><a class="header" href="#doodles">Doodles</a></h1>
-<p>Some random projects / examples I like to replicate.</p>
+</script><div style="break-before: page; page-break-before: always;"></div><h1 id="data-structures--algorithms"><a class="header" href="#data-structures--algorithms">Data Structures &amp; Algorithms</a></h1>
+<p>In this section, I aim to explore and implement common algorithms in a visually engaging manner. My goal is to delve into the fundamental concepts of data structures and algorithms, approaching them in my own unique way.</p>
+<p>Through visual representations and personalized implementations, I seek to enhance my programming and engineering skills. By dissecting these basic principles, I aim to gain a deeper understanding and mastery of the foundational elements of computer science.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="doodles"><a class="header" href="#doodles">Doodles</a></h1>
+<p>Welcome to Doodles! Here, I share all sorts of random projects and experiments that don't fit anywhere else. From fun prototypes to quirky designs, it's my space to try out new ideas.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="sierpinski-triangle"><a class="header" href="#sierpinski-triangle">Sierpinski Triangle</a></h1>
 <p>All the process and rendering is managed by wasm.</p>
 <p>You can control the depth from this slider. </p>
@@ -412,7 +422,12 @@ Depth:
         });
     };
     load();
-</script> 
+</script> <div style="break-before: page; page-break-before: always;"></div><h1 id="webdev"><a class="header" href="#webdev">Webdev</a></h1>
+<p>Welcome to the Web Development Workshop, where I showcase applications built using various frameworks in a full-stack manner to continuously enhance my skills in web development!</p>
+<p>In this section, you'll find a curated collection of projects that serve as milestones in my journey of mastering web development.
+From front-end frameworks like React and Solid or Vue in javascript or Leptos with Axum  to back-end.
+Each application represents a blend of creativity, functionality, and technical skills.</p>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
