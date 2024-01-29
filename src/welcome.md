@@ -1,9 +1,8 @@
 # Welcome 
-Here is my personal journey to practice and learn rust and wasm, two technologies that I like the most.
+Hey there! Welcome to my coding journey! This is where I document my ongoing quest to improve my programming skills.
 
-On the sidebar you can select categories for different challenges/projects I consider interesting to develop.
+In this digital space, you'll discover a variety of projects I've been working on using different programming languages and frameworks. It's like my personal laboratory where I experiment and learn through hands-on projects.
 
-## The Coding Train
-I'm huge fan of [Daniel Shiffman](https://shiffman.net/), here is a list of challenges I'm gonna try to replicate from the project named The Coding Train.
+Whether I'm tinkering with web development, diving into creative coding and programming graphics, or exploring new technologies like Rust and Webassembly, you'll find a mix of challenges and triumphs recorded here.
 
-[<img src="https://thecodingtrain.com/assets/images/standardtv-store.jpg"  alt="The Codgin Train" width="300px" />](https://thecodingtrain.com/CodingChallenges/)
+So, feel free to explore and join me as I navigate this exciting world of coding. Together, let's embrace the adventure of continual learning and growth!

@@ -1,10 +1,16 @@
 [book]
-title = "Rustnal"
+title = "Code Chronicles"
 authors = ["jessai"]
-description =  "My journal abput rust and wasm."
+description =  "Welcome to Code Chronicles! Here, I document my journey through the world of programming, sharing personal insights, triumphs, and challenges along the way. Dive into my ever-evolving portfolio of full-stack web applications, creative coding experiments, and ongoing learning adventures"
 language = "en"
 multilingual = false
 src = "src"
 
 [output.html]
-site-url = "/rustnal/"
+site-url = "/code-chronicles"
+additional-css = ['.\theme\catppuccin.css', '.\theme\catppuccin-admonish.css']
+
+[preprocessor]
+
+[preprocessor.catppuccin]
+assets_version = "2.1.0" # DO NOT EDIT: Managed by `mdbook-catppuccin install`
