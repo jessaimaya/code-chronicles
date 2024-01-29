@@ -8,7 +8,7 @@ src = "src"
 
 [output.html]
 site-url = "/code-chronicles"
-additional-css = ['.\theme\catppuccin.css', '.\theme\catppuccin-admonish.css']
+additional-css = ['./theme/catppuccin.css', './theme/catppuccin-admonish.css']
 
 [preprocessor]
 
